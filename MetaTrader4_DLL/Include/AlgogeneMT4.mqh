@@ -12,7 +12,7 @@
 //| defines                                                          |
 //+------------------------------------------------------------------+
 
-#import "C:\Users\user\Desktop\AlgogeneMT4.dll"
+#import "C:\Users\user\Desktop\Algogene_x86.dll"
 void initWebSocket(int msg_id, string user, string api_key, int bot_id);
 void deinitWebSocket();
 int getCommand(uchar& data[]);
