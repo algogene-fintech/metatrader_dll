@@ -1,6 +1,6 @@
 # Algogene MetaTrader DLL
 
-AlgogeneMT4.dll and AlgogeneMT5.dll are dynamic linked libraries that can be used in your MetaTrader Expert Advisors to obtain useful trading signals from Algogene's server and publish trading records to your Algogene account for advanced analysis.
+Algogene_x86.dll and Algogene_x64.dll are dynamic linked libraries that can be used in your MetaTrader Expert Advisors to obtain useful trading signals from Algogene's server and publish trading records to your Algogene account for advanced analysis.
 
 ## Objectives
 
@@ -22,7 +22,7 @@ AlgogeneMT4.dll and AlgogeneMT5.dll are dynamic linked libraries that can be use
 
 3. From MetaTrader4_DLL/ MetaTrader5_DLL > Include, add the header file (AlgogeneMT4.mqh/ AlgogeneMT5.mqh) in your MetaTrader's Include folder
 
-4. Copy the path of the Dynamic Linked Library file (AlgogeneMT4.dll/ AlgogeneMT5.dll), and paste it in line 15 in the header file from Step 3.
+4. Copy the path of the Dynamic Linked Library file (Algogene_x86.dll/ Algogene_x64.dll), and paste it in line 15 in the header file from Step 3.
 
 5. Input the configurations in your Expert Advisors files
 ```
@@ -37,6 +37,9 @@ _api_key
 _runmode
 _accountid
 ```
+
+Note that MetaTrader4 runs in 32-bit and hence only accepts Algogene_x86.dll, whereas MetaTrader5 runs in 64-bit, so Algogene_x64.dll should be used instead.
+
 ## Functionalities
 
 ### Get Trading Signals from Algogene
