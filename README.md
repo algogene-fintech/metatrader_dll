@@ -38,6 +38,8 @@ _runmode
 _accountid
 ```
 
+6. In your MetaTrader software, enable "Auto Trading" and "Allow DLL impots" under Tools > Options > ExpertAdvisors
+
 Note that MetaTrader4 runs in 32-bit and hence only accepts Algogene_x86.dll, whereas MetaTrader5 runs in 64-bit, so Algogene_x64.dll should be used instead.
 
 ## Functionalities
