@@ -16,6 +16,13 @@ Algogene_x86.dll and Algogene_x64.dll are dynamic linked libraries that can be u
 
 ## Setup
 
+### Setup the environment
+
+1. Install the latest Microsoft Visual C++ Redistributable
+https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
+
+### Setup MetaTrader
+
 1. Clone/ Download this repository to your local machine
 
 2. From MetaTrader4_DLL/ MetaTrader5_DLL > ExpertAdvisors, add the three mq4/ mq5 files (AlgogeneGetSignal, AlgogeneOpenOrder, AlgogeneCloseOrder) to your MetaTrader's ExpertAdvisors folder
@@ -38,7 +45,7 @@ _runmode
 _accountid
 ```
 
-6. In your MetaTrader software, enable "Auto Trading" and "Allow DLL impots" under Tools > Options > ExpertAdvisors
+6. In MetaTrader, enable "Auto Trading" and "Allow DLL impots" under Tools > Options > ExpertAdvisors
 
 Note that MetaTrader4 runs in 32-bit and hence only accepts Algogene_x86.dll, whereas MetaTrader5 runs in 64-bit, so Algogene_x64.dll should be used instead.
 
