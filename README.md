@@ -19,7 +19,17 @@ Algogene_x86.dll and Algogene_x64.dll are dynamic linked libraries that can be u
 ### Setup the environment
 
 1. Install the latest Microsoft Visual C++ Redistributable
+
 https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
+
+2. Install zlib1.dll
+
+https://www.sts-tutorial.com/download/file/MjYwNA==
+
+3. Paste the zlib1.dll File (32-Bit) into the Folder: `C:/Windows/System32/`
+
+4. (If your computer is 64-bit) Paste the zlib1.dll File (32-Bit) into the Folder: `C:/Windows/SysWOW64/`
+
 
 ### Setup MetaTrader
 
@@ -45,7 +55,7 @@ _runmode
 _accountid
 ```
 
-6. In MetaTrader, enable "Auto Trading" and "Allow DLL impots" under Tools > Options > ExpertAdvisors
+6. In MetaTrader, enable "Auto Trading" and "Allow DLL imports" under Tools > Options > ExpertAdvisors
 
 Note that MetaTrader4 runs in 32-bit and hence only accepts Algogene_x86.dll, whereas MetaTrader5 runs in 64-bit, so Algogene_x64.dll should be used instead.
 
