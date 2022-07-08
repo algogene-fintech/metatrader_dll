@@ -12,40 +12,11 @@ Algogene_x86.dll and Algogene_x64.dll are dynamic linked libraries that can be u
 
 * To adopt Object-Oriented Programming to provide a neat interface by the use of abstractions
 
-
-## Set up
-
-### Set up the environment
-
-#### Install zlib1.dll
-
-1. Download the zlib1.dll at https://www.sts-tutorial.com/download/file/MjYwNA==. 
-
-2. Paste the zlib1.dll File (32-Bit) into the Folder: `C:/Windows/System32/`.
-
-3. (If your computer is 64-bit) Paste the zlib1.dll File (32-Bit) into the Folder: `C:/Windows/SysWOW64/`.
-
-#### Install the latest Microsoft Visual Studio
-
-1. Download the latest verison of Visual Studio at https://visualstudio.microsoft.com/downloads/
-2. Install by opening VisualStudio.exe
-3. In the setup, under "Workload" tab, check "Desktop Development with C++" and ".NET Desktop Development" 
-3. Click "Install"
-
-#### Install WebSocket Dependencies
-
-Open your command prompt and do the following
-
-1. Download vcpkg: `git clone https://github.com/Microsoft/vcpkg.git` 
-2. Build vcpkg: `.\vcpkg\bootstrap-vcpkg.bat`
-3. Go to vcpkg directory: `cd vcpkg`
-4. Install 32-bit websocket dependencies: `vcpkg install ixwebsocket`
-5. Install 64-bit websocket dependencies: `vcpkg install ixwebsocket:x64-windows`
-6. Enable global usage: `vcpkg integrate install`
+* To enable easy and convenient setup without the need for installations
 
 <sub><sup>DLLs from this repository contain third-party packages, which we do not warrant, endorse, or assume liability for.</sup></sub>
 
-### Set up MetaTrader
+## Set up MetaTrader
 
 #### For MetaTrader4
 
@@ -55,7 +26,7 @@ Open your command prompt and do the following
 
 3. From MetaTrader4_DLL> Include, add the header file (AlgogeneMT4.mqh) in your MetaTrader's Include folder
 
-4. Copy the path of the Dynamic Linked Library file (Algogene_x86.dll), and paste it in line 15 in the header file from Step 3.
+4. Copy the path of the Dynamic Linked Library file (MetaTrader4_DLL > Lib > Algogene_x86.dll), and paste it in line 15 in the header file from Step 3.
 
 5. Input the configurations in your Expert Advisors files
 	```
@@ -81,7 +52,7 @@ Open your command prompt and do the following
 
 3. From MetaTrader5_DLL > Include, add the header file (AlgogeneMT5.mqh) in your MetaTrader's Include folder
 
-4. Copy the path of the Dynamic Linked Library file (MetaTrader5_DLL > Lib > Algogene_x64.dll), and paste it in line 15 in the header file from Step 3.
+4. Copy the path of the Dynamic Linked Library file (MetaTrader5_DLL > Lib > Algogene_x64.dll), and paste it in line 16 in the header file from Step 3.
 
 5. Input the configurations in your Expert Advisors files
 	```
@@ -98,7 +69,6 @@ Open your command prompt and do the following
 	```
 
 6. In MetaTrader, enable "Auto Trading" and "Allow DLL imports" under Tools > Options > ExpertAdvisors
-
 
 ## Functionalities
 
